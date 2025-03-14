@@ -13,7 +13,7 @@ const StyledButton = styled.button<ButtonProps>`
 
   transition: 200ms;
 
-  :hover {
+  &:hover {
     background-color: #4c5172;
     border: 1.5px solid #4c5172;
     color: white;
