@@ -14,8 +14,8 @@ const StyledButton = styled.button<ButtonProps>`
   transition: 200ms;
 
   &:hover {
-    background-color: ${(props) => !props.disabled && (props.hoverBackgroundColor || "#4c5172")};
-    border: 1.5px solid ${(props) => !props.disabled && (props.hoverBackgroundColor || "#4c5172")};
+    background-color: ${(props) => !props.disabled && (props.hoverBackgroundColor || "#3284ad")};
+    border: 1.5px solid ${(props) => !props.disabled && (props.hoverBackgroundColor || "#3284ad")};
     color: ${(props) => !props.disabled && "white"};
     cursor: ${(props) => !props.disabled && "pointer"};
   }
