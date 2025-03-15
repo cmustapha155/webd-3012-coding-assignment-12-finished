@@ -5,7 +5,8 @@ import styled from "styled-components";
 const StyledLabel = styled.label<LabelProps>`
   font-size: 1em;
   font-family: sans-serif;
-  color: #4c5172;
+  color: ${(props) => props.textColor || "#3284ad"};
+  color: ${(props) => props.disabled && "lightgrey"};
   padding: 10px 10px 10px 10px;
 `;
 
@@ -16,6 +17,7 @@ const Label: React.FC<LabelProps> = (props) => {
       id = {props.id}
       for = {props.for}
       disabled = {props.disabled}
+      textColor = {props.textColor}
     >
       {props.text}
     </StyledLabel>
