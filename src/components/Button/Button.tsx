@@ -14,9 +14,10 @@ const StyledButton = styled.button<ButtonProps>`
   transition: 200ms;
 
   &:hover {
-    background-color: #4c5172;
-    border: 1.5px solid #4c5172;
-    color: white;
+    background-color: ${(props) => !props.disabled && (props.hoverBackgroundColor || "#4c5172")};
+    border: 1.5px solid ${(props) => !props.disabled && (props.hoverBackgroundColor || "#4c5172")};
+    color: ${(props) => !props.disabled && "white"};
+    cursor: ${(props) => !props.disabled && "pointer"};
   }
 `;
 
@@ -28,6 +29,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       type = {props.type}
       onClick = {props.onClick}
       disabled = {props.disabled}
+      hoverBackgroundColor = {props.hoverBackgroundColor}
     >
       {props.text}
     </StyledButton>
