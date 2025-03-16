@@ -15,7 +15,7 @@ const Label: React.FC<LabelProps> = (props) => {
     <StyledLabel
       className = {props.className}
       id = {props.id}
-      for = {props.for}
+      htmlFor = {props.htmlFor}
       disabled = {props.disabled}
       textColor = {props.textColor}
     >

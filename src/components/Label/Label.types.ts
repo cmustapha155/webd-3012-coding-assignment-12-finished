@@ -3,6 +3,6 @@ export interface LabelProps {
   className?: string;
   id?: string;
   textColor?: string;
-  for?: string;
+  htmlFor?: string;
   disabled?: boolean;
 }

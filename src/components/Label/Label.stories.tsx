@@ -17,7 +17,7 @@ export const Primary: Story = {
     text: "Label Text",
     className: "label",
     id: "",
-    for: "",
+    htmlFor: "",
     disabled: false,
   },
 };
@@ -27,7 +27,7 @@ export const Secondary: Story = {
     text: "Label Text",
     className: "label",
     id: "",
-    for: "",
+    htmlFor: "",
     disabled: true,
   },
 };
@@ -37,7 +37,7 @@ export const PurpleGrey: Story = {
     text: "Label Text",
     className: "label",
     id: "",
-    for: "",
+    htmlFor: "",
     disabled: false,
     textColor: "#4c5172",
   },
