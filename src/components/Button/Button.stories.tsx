@@ -43,6 +43,7 @@ export const PurpleGrey: Story = {
     id: "",
     hoverBackgroundColor: "#4c5172",
     type: "button",
+    onClick: () => console.log("Click"),
     disabled: false,
   },
 };
