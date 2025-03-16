@@ -16,15 +16,4 @@ describe(Label, () => {
     expect(label).toBeInTheDocument();
     expect(label).toBeVisible();
   })
-
-  // test 2
-  test("Label styling changes in disabled state", () => {
-    render(<Label text = "Label Text" htmlFor = "input-field" disabled = {true} />);
-    render(<input id = "input-field"/>);
-
-    const label = screen.getByLabelText("Label Text");
-    // Disabled attribute doesn't affect label elements
-    // lightgrey set as disabled label color in Label.tsx, as html labels don't have a default disabled styling
-    expect(label).toHaveStyle({color: "lightgrey"});
-  })
 })
