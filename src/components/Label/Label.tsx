@@ -5,8 +5,7 @@ import styled from "styled-components";
 const StyledLabel = styled.label<LabelProps>`
   font-size: 1em;
   font-family: sans-serif;
-  color: ${(props) => props.textColor || "#3284ad"};
-  color: ${(props) => props.disabled && "lightgrey"};
+  color: ${(props) => props.disabled ? "lightgrey" : props.textColor || "#3284ad"};
   padding: 10px 10px 10px 10px;
 `;
 
