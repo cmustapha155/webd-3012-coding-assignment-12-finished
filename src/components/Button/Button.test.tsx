@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; // unused in file, required when running tests
 import { render, screen} from "@testing-library/react";
 import '@testing-library/jest-dom';
 import Button from "./Button";
